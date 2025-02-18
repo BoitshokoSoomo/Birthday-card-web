@@ -95,6 +95,23 @@
             border: 3px solid #ff9999;
             transition: transform 0.5s ease-in-out;
         }
+        .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the images horizontally */
+    align-items: center; /* Centers vertically */
+    gap: 10px; /* Adds spacing between images */
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 200px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    border: 3px solid #ff9999;
+    transition: transform 0.5s ease-in-out;
+    object-fit: cover;
+}
 
         .gallery img:hover {
             transform: scale(1.1);
